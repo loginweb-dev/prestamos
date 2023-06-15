@@ -8,18 +8,22 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="widget p-lg">
-                            <h4 class="m-b-lg">Usuarios</h4>
+                            <h2 class="m-b-lg">
+                                Usuarios <a href="{{url('admin/user/create')}}" class="btn btn-primary">Nuevo usuario</a>
+                            </h2>
                             <table class="table admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Usuario</th>
+                                        <th>Nombre</th>
+                                        <th>Nivel</th>
+                                        <th>Cartera</th>
+                                        <th>Supervisor</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
                                 <tbody>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Usuario</th>
-                                    <th>Nombre</th>
-                                    <th>Nivel</th>
-                                    <th>Cartera</th>
-                                    <th>Supervisor</th>
-                                    <th></th>
-                                </tr>
                                 @foreach($clients as $client)
                                     @if($client->active_user=='enabled')
                                         <tr>

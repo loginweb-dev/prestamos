@@ -16,15 +16,15 @@
     <div class="navbar-header">
 
         <a href="{{url('logout')}}" class="navbar-toggle navbar-toggle-right collapsed p-3">
-            <i class="fa fa-2x fa-sign-out"></i>
+            <i class="fa fa-2x fa-sign-out"></i>  Salir
         </a>
 
         <a href="{{url('/')}}" class="navbar-brand text-white">
-            {{Auth::user()->name}}
+             <i class="fa fa-2x fa-home"></i> {{Auth::user()->name}}
         </a>
     </div><!-- .navbar-header -->
 
-    <div class="navbar-container container-fluid">
+    <div class="navbar-container container">
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <ul class="nav navbar-toolbar navbar-toolbar-left navbar-left">
                 <li class="hidden-float hidden-menubar-top">

@@ -8,12 +8,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="widget p-lg">
-                           <table>
-    <tr>
-        <td><h4 class="m-b-lg">Detalles Clientes y Ventas</h4></td>
-        <td><a href="{{url('client/create')}}" class="btn btn-dark">Nuevo cliente</a></td>
-    </tr>
-</table>
+                            <h4 class="m-b-lg">Detalles Clientes y Ventas
+                                <a href="{{url('client/create')}}" class="btn btn-primary">Nuevo cliente</a>
+                            </h4>
+
                             <table class="table client-table">
                                 <thead class="visible-lg">
                                 <tr>

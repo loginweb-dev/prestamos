@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('admin-section')
-    <div class="col-md-3 col-sm-6">
+    {{-- <div class="col-md-4 col-sm-4">
         <a href="{{url('admin/user/create')}}">
             <div class="widget stats-widget">
                 <div class="widget-body clearfix bg-success">
@@ -11,25 +11,25 @@
                     <span class="pull-right big-icon watermark"><i
                                 class="fa fa-user-plus"></i></span>
                 </div>
-            </div><!-- .widget -->
+            </div>
         </a>
-
-    </div>
-    <div class="col-md-3 col-sm-6">
-        <a href="{{url('admin/route/create')}}">
+    </div> --}}
+    <div class="col-sm-6">
+        {{-- <a href="{{url('admin/route/create')}}"> --}}
+        <a href="{{url('admin/route')}}">
             <div class="widget stats-widget">
                 <div class="widget-body clearfix bg-purple">
                     <div class="pull-left">
-                        <h3 class="widget-title text-white">Crear cartera</h3>
+                        <h3 class="widget-title text-white">Listar Carteras</h3>
                     </div>
                     <span class="pull-right big-icon watermark"><i
                                 class="fa fa-map-marker"></i></span>
                 </div>
             </div><!-- .widget -->
         </a>
-
     </div>
-    <div class="col-md-3 col-sm-6">
+    
+    <div class=" col-sm-6">
         <a href="{{url('admin/user')}}">
             <div class="widget stats-widget">
                 <div class="widget-body clearfix bg-deepOrange">
@@ -40,7 +40,6 @@
                 </div>
             </div><!-- .widget -->
         </a>
-
     </div>
 @endsection
 

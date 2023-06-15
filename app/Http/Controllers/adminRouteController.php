@@ -16,7 +16,10 @@ class adminRouteController extends Controller
      */
     public function index()
     {
-        //
+        // return "Hola";
+        $data = db_wallet::all();
+        //return $data;
+        return view('admin.route_index', compact('data'));
     }
 
     /**
