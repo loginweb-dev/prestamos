@@ -8,8 +8,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="widget p-lg">
-                            <h4 class="m-b-lg">Detalles Clientes y Ventas
-                                <a href="{{url('client/create')}}" class="btn btn-primary">Nuevo cliente</a>
+                            <h4 class="m-b-lg">Clientes
+                                <a href="{{url('client/create')}}" class="btn btn-primary">Crear Nuevo</a>
                             </h4>
 
                             <table class="table client-table">
@@ -18,7 +18,7 @@
                                     <th>Nombre</th>
                                     <th>Apellidos</th>
                                     <!-- <th>Barrio</th>-->
-                                    <th>Total</th>
+                                    <th>Creditos</th>
                                     <th>Pagados</th>
                                     <th>Vigentes</th>
                                     <th>Monto Prestado</th>

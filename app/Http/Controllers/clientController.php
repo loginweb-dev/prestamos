@@ -51,6 +51,7 @@ class clientController extends Controller
      */
     public function store(Request $request)
     {
+        // return $request;
         $id_wallet = $request->wallet;
         $id_agent = $request->agent;
         $country = $request->country;

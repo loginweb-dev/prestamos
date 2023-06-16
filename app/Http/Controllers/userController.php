@@ -85,12 +85,15 @@ class userController extends Controller
      */
     public function create(Request $request)
     {
+        //return $request;
         $id = $request->id;
         $data = array(
             'user' => User::find($id),
-            'payment_number' => DB::table('payment_number')->orderBy('name', 'asc')->get()
+            'payment_number' => DB::table('payment_number')->orderBy('name', 'asc')->get(),
+            'localidad' => DB::table('countrys')->get()
         );
-        //return view('client.create', $data);
+        // return $data['localidad'];
+        // return view('client.create', $data);
     	return view('client.create2', $data);
     }
 
@@ -102,7 +105,7 @@ class userController extends Controller
      */
     public function store(Request $request)
     {
-    	//return $request;
+    	return $request;
         if (!Auth::user()->level == 'agent') {
             return 'No tienes permisos';
         }
